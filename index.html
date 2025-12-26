@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio & CV | Rizky Pratama</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- LINK KE CSS -->
+    <link rel="stylesheet" href="style/css/style.css">
+</head>
+<body>
+
+    <!-- Background Animasi -->
+    <div class="aura-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <span class="gradient-text">Syaihul.</span> 
+                <i class="fas fa-camera-retro" style="margin-left:5px; background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <!-- PENAMBAHAN MENU GALERI -->
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-content reveal">
+            <div class="profile-img-wrapper">
+                <div class="profile-glow"></div>
+                <div class="profile-img-container">
+                    <img src="style/img/profil.jpg" alt="Foto Profil" class="profile-img">
+                </div>
+            </div>
+            
+            <h1>Halo, Saya <span class="gradient-text">Syaihul Islami</span></h1>
+            <p class="tagline">Fotografer, Videografer & Desainer</p>
+            
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary" id="downloadCvBtn">
+                    Download CV <i class="fas fa-download" style="margin-left: 8px;"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Tentang Saya</h2>
+                <div class="section-separator"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text glass-card reveal">
+                    <h3>Visual Storyteller & <span class="gradient-text">Nature Explorer</span></h3>
+                    <p>
+                        Saya adalah seorang kreatif yang percaya bahwa setiap sudut alam memiliki cerita yang menunggu untuk diabadikan. Menggabungkan teknik fotografi, videografi sinematik, dan estetika desain, saya menciptakan karya visual yang tidak hanya indah tetapi juga bermakna.
+                    </p>
+                    <p>
+                        Selain bekerja dengan klien untuk branding dan dokumentasi, saya menghabiskan waktu luang untuk menjelajahi keindahan wisata alam Indonesia.
+                    </p>
+                </div>
+                
+                <div class="glass-card reveal" style="padding: 30px;">
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fas fa-camera"></i></div>
+                        <div class="info-content">
+                            <span>Fokus Utama</span>
+                            <p>Photography & Video</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fas fa-map-marked-alt"></i></div>
+                        <div class="info-content">
+                            <span>Hobi</span>
+                            <p>Traveling & Adventure</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fas fa-briefcase"></i></div>
+                        <div class="info-content">
+                            <span>Status</span>
+                            <p class="gradient-text" style="font-weight: 700;">Open for Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Perjalanan Karir</h2>
+                <div class="section-separator"></div>
+            </div>
+            
+            <div class="resume-grid glass-card" style="padding: 50px;">
+                <!-- Pendidikan -->
+                <div class="resume-column reveal">
+                    <div class="resume-header">
+                        <div class="icon-box" style="width: 40px; height: 40px; margin: 0;"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>Pendidikan</h3>
+                    </div>
+                    
+                    <div class="timeline-box">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2023 - Sekarang</span>
+                            <h4 class="timeline-title">ILMU KOMPUTER (Multimedia)</h4>
+                            <p class="timeline-subtitle">Universitas Bumigora</p>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Fokus pada Fotografi Jurnalistik dan Videografi Komersial.</p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2019 - 2021</span>
+                            <h4 class="timeline-title">SMK Negeri 1 Dompu</h4>
+                            <p class="timeline-subtitle">Jurusan Desain Komunikasi Visual</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pengalaman -->
+                <div class="resume-column reveal">
+                    <div class="resume-header">
+                        <div class="icon-box" style="width: 40px; height: 40px; margin: 0;"><i class="fas fa-video"></i></div>
+                        <h3>Pengalaman</h3>
+                    </div>
+                    
+                    <div class="timeline-box">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2023 - Sekarang</span>
+                            <h4 class="timeline-title">Freelance Visual Creator</h4>
+                            <p class="timeline-subtitle">Self Employed</p>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Mengerjakan proyek dokumentasi wisata, pre-wedding alam, dan video profil perusahaan.</p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2021 - 2023</span>
+                            <h4 class="timeline-title">Creative Designer</h4>
+                            <p class="timeline-subtitle">Travel Agency ID</p>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Membuat konten promosi visual dan video reels untuk destinasi wisata prioritas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="position: relative;">
+        <div class="container">
+            <div class="glass-card reveal">
+                <div class="section-title" style="margin-bottom: 40px;">
+                    <h2>Keahlian</h2>
+                    <div class="section-separator"></div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                    <div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Fotografi (Sony Alpha / Canon)</span>
+                                <span class="gradient-text">95%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Video Editing (Capcut & Adobe Premiere Pro)</span>
+                                <span class="gradient-text">90%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Graphic Design (Photoshop/Ai)</span>
+                                <span class="gradient-text">85%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Drone Piloting</span>
+                                <span class="gradient-text">80%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="soft-skills-container">
+                    <span class="soft-skill-badge">📸 Landscape Photography</span>
+                    <span class="soft-skill-badge">🎥 Cinematic Vlog</span>
+                    <span class="soft-skill-badge">🎨 Brand Identity</span>
+                    <span class="soft-skill-badge">🌄 Nature Exploration</span>
+                    <span class="soft-skill-badge">💡 Creative Direction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Galeri Karya</h2>
+                <div class="section-separator"></div>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-img-holder">
+                        <img src="style/img/Galeri.jpg" alt="Nature Photography" class="portfolio-img">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Photography</span>
+                        <h3 class="portfolio-title">Hidden Gems of Lombok</h3>
+                        <p class="portfolio-desc">Koleksi foto lanskap pegunungan dan air terjun tersembunyi di Jawa Barat.</p>
+                        <!-- UPDATE LINK GALERI DI SINI -->
+                        <a href="gallery.html" class="portfolio-link">Lihat Galeri <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-img-holder">
+                        <img src="style/img/Gallery vidio.jpg" alt="Cinematic Video" class="portfolio-img">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Videography</span>
+                        <h3 class="portfolio-title">Cinematic Travel Vlog</h3>
+                        <p class="portfolio-desc">Video dokumenter pendek perjalanan mendaki Gunung Rinjani dan Bukit Bukit lainnya.</p>
+                        <a href="#" class="portfolio-link">Tonton Video <i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-img-holder">
+                        <img src="https://images.unsplash.com/photo-1541462608143-0af7f589d4eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Design Branding" class="portfolio-img">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Design</span>
+                        <h3 class="portfolio-title">Eco-Tourism Branding</h3>
+                        <p class="portfolio-desc">Identitas visual dan materi promosi untuk start-up wisata ramah lingkungan.</p>
+                        <a href="#" class="portfolio-link">Lihat Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-wrapper glass-card reveal">
+                <div class="section-title">
+                    <h2>Mari Berkolaborasi</h2>
+                    <p style="color: var(--text-light); margin-top: 10px;">Ingin mendokumentasikan petualangan atau butuh desain?</p>
+                </div>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" class="form-control" placeholder="Siapa nama Anda?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="email@contoh.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ceritakan Kebutuhan Anda</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Misal: Foto prewed di gunung atau video profil..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; box-shadow: none;">Kirim Pesan <i class="fas fa-paper-plane" style="margin-left: 8px;"></i></button>
+                </form>
+
+                <div class="social-links">
+                    <!-- LINK SOCIAL MEDIA LANGSUNG -->
+                    <a href="https://www.instagram.com/saihul.islami/" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@saihul_Hike" target="_blank" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@saihulislami17" target="_blank" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo" style="justify-content: center; margin-bottom: 20px; font-size: 1.2rem;">
+                <span class="gradient-text">Syaihu.</span> <i class="fas fa-camera-retro" style="margin-left:5px; background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+            </div>
+            <p style="color: var(--text-light);">&copy; 2024 Visuals by Syaihul. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- LINK KE JS -->
+    <script src="style/js/script.js"></script>
+</body>
+</html>
