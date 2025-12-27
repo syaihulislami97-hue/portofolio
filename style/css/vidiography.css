@@ -1,0 +1,159 @@
+/* --- TEMA: VIDEOGRAFI DARK --- */
+:root {
+    --gradient-text: linear-gradient(90deg, #00f2ea 0%, #0055ff 100%);
+    --primary-color: #00f2ea;
+    --bg-color: #02040a;
+    --card-bg: rgba(13, 20, 36, 0.6);
+    --glass-border: rgba(0, 242, 234, 0.15);
+    --text-main: #ffffff;
+    --text-light: #94a3b8;
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: var(--bg-color); 
+    color: var(--text-main); 
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Background Animasi */
+.aura-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+.blob { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.3; animation: floatBlob 20s infinite alternate; }
+.blob-1 { top: 10%; left: -10%; width: 600px; height: 600px; background: rgba(0, 242, 234, 0.15); }
+.blob-2 { bottom: 10%; right: -10%; width: 700px; height: 700px; background: rgba(0, 85, 255, 0.15); animation-delay: -5s; }
+.blob-3 { top: 40%; left: 30%; width: 400px; height: 400px; background: rgba(100, 0, 255, 0.15); animation-delay: -10s; }
+
+@keyframes floatBlob { 0% { transform: translate(0,0); } 100% { transform: translate(30px, 30px); } }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* Animasi Reveal */
+.reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+/* --- NAVIGASI --- */
+.video-nav { 
+    padding: 30px 0; display: flex; justify-content: space-between; align-items: center; 
+    border-bottom: 1px solid var(--glass-border); margin-bottom: 40px;
+}
+.logo { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.5rem; color: #fff; }
+.gradient-text { background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+.back-link { 
+    color: var(--text-light); text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 8px; transition: var(--transition);
+}
+.back-link:hover { color: var(--primary-color); transform: translateX(-5px); }
+
+/* --- GRID VIDEO (3 KOLOM 3:4) --- */
+.video-grid {
+    display: grid;
+    /* Ubah ke 3 kolom agar tidak terlalu besar (mirip galeri) */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Kartu Video */
+.video-item {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: var(--transition);
+    backdrop-filter: blur(10px);
+}
+
+.video-item:hover {
+    box-shadow: 0 20px 50px rgba(0, 242, 234, 0.1);
+    border-color: rgba(0, 242, 234, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Wrapper Video (Rasio 3:4) */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    /* Aspect Ratio 3:4 (Portrait) --> (4/3)*100 = 133.33% */
+    padding-top: 133.33%; 
+    background: #000;
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Video akan di-crop agar pas memenuhi bingkai 3:4 */
+    outline: none;
+}
+
+/* Caption di Bawah Video */
+.video-caption {
+    padding: 20px; /* Padding sedikit dikecilkan agar proporsional */
+}
+
+.caption-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.video-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0;
+}
+
+.duration-badge {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.video-desc {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Tags */
+.video-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.video-tags span {
+    font-size: 0.75rem;
+    color: var(--primary-color);
+    background: rgba(0, 242, 234, 0.1);
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 Kolom di Tablet */
+    }
+}
+
+@media (max-width: 600px) {
+    .video-grid {
+        grid-template-columns: 1fr; /* 1 Kolom di HP */
+    }
+}

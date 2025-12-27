@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematic Videography | Syaihul Islami</title>
+    
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS Khusus Videografi -->
+    <link rel="stylesheet" href="style/css/vidiography.css">
+</head>
+<body>
+
+    <!-- Background Animasi (Konsisten) -->
+    <div class="aura-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <!-- HEADER NAVIGASI -->
+        <nav class="video-nav reveal">
+            <!-- Tombol Kembali ke Index -->
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Kembali ke Beranda
+            </a>
+            <div class="logo">
+                <span class="gradient-text">Syaihul.</span> <i class="fas fa-video" style="color:var(--primary-color)"></i>
+            </div>
+        </nav>
+
+        <!-- Judul Halaman -->
+        <section style="text-align: center; margin: 40px 0;">
+            <div class="reveal">
+                <span style="color: var(--primary-color); letter-spacing: 2px; text-transform: uppercase; font-size: 0.9rem; font-weight: 600;">Showreel & Projects</span>
+                <h1 style="font-family: 'Outfit', sans-serif; font-size: 2.5rem; margin-top: 10px;">Cinematic <span class="gradient-text">Stories</span></h1>
+                <p style="color: var(--text-light); max-width: 600px; margin: 10px auto;">Kumpulan karya videografi dokumenter dan perjalanan visual.</p>
+            </div>
+        </section>
+
+        <!-- Grid Video -->
+        <div class="video-grid">
+            
+            <!-- VIDEO 1 -->
+            <div class="video-item reveal">
+                <div class="video-wrapper">
+                    <!-- PERBAIKAN: Poster harus berupa GAMBAR (.jpg/.png), bukan video (.mp4) -->
+                    <!-- Pastikan file video1.mp4 ada di folder style/video/ -->
+                    <video controls poster="style/mp4/vidio1.MP4">
+                        <source src="style/mp4/vidio1.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                </div>
+                <div class="video-caption">
+                    <div class="caption-header">
+                        <h3 class="video-title">Journey to Kondo Hill</h3>
+                        <span class="duration-badge"><i class="far fa-clock"></i> 00:20</span>
+                    </div>
+                    <p class="video-desc">Dokumentasi perjalanan mendaki bukit Kondo salah satu bukit di bawah kaki gunung Rinjani, menangkap momen bukit yang indah.</p>
+                    <div class="video-tags">
+                        <span>#Travel</span>
+                        <span>#Nature</span>
+                        <span>#Cinematic</span>
+                        <span>#Sevensummit</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO 2 -->
+            <div class="video-item reveal">
+                <div class="video-wrapper">
+                    <video controls poster="style/mp4/vidio2.MOV">
+                        <source src="style/mp4/vidio2.MOV" type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                </div>
+                <div class="video-caption">
+                    <div class="caption-header">
+                        <h3 class="video-title">Bukit Selong</h3>
+                        <span class="duration-badge"><i class="far fa-clock"></i> 00:30</span>
+                    </div>
+                    <p class="video-desc">Eksplorasi wisata tersembunyi di sembalun, Bukit Selong dengan view persawahan yang super amazing .</p>
+                    <div class="video-tags">
+                        <span>#Documentary</span>
+                        <span>#sembalun</span>
+                        <span>#Relaxing</span>
+                        <span>#ricefields</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIDEO 3 (Jika ada) -->
+            <div class="video-item reveal">
+                <div class="video-wrapper">
+                    <video controls poster="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&w=600&q=80">
+                        <source src="style/video/video2.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung tag video.
+                    </video>
+                </div>
+                <div class="video-caption">
+                    <div class="caption-header">
+                        <h3 class="video-title">Relaxing Nature</h3>
+                        <span class="duration-badge"><i class="far fa-clock"></i> 01:45</span>
+                    </div>
+                    <p class="video-desc">Pemandangan alam yang menenangkan untuk relaksasi sejenak.</p>
+                    <div class="video-tags">
+                        <span>#Nature</span>
+                        <span>#Calm</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <footer style="margin-top: 80px; border-top: 1px solid var(--glass-border); padding: 30px 0; text-align: center;">
+            <p style="color: var(--text-light); font-size: 0.9rem;">&copy; 2024 Syaihul Islami Videography</p>
+        </footer>
+    </div>
+
+    <!-- Hubungkan ke JS Khusus Videografi -->
+    <script src="style/js/vidiography.js"></script>
+</body>
+</html>

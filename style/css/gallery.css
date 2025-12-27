@@ -47,7 +47,7 @@ body {
 }
 .back-link:hover { color: var(--primary-color); transform: translateX(-5px); }
 
-/* --- GRID FOTO (UNIFORM 9:16) --- */
+/* --- GRID FOTO (UNIFORM 3:4) --- */
 .gallery-grid {
     display: grid;
     /* Membuat 3 kolom dengan lebar yang sama */
@@ -63,8 +63,8 @@ body {
     border: 1px solid var(--glass-border);
     cursor: pointer;
     
-    /* KUNCI AGAR RAPI: Memaksa rasio aspek 9:16 */
-    aspect-ratio: 9 / 16;
+    /* KUNCI AGAR RAPI: Memaksa rasio aspek 3:4 (Portrait Standard) */
+    aspect-ratio: 3 / 4;
     width: 100%;
 }
 
